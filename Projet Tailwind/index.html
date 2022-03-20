@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="./Netflix_icon.svg.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Watch TV Shows Online, Watch Movies Online">
+    <title>Netflix</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://kit.fontawesome.com/752417f993.js" crossorigin="anonymous"></script>
+   
+</head>
+<body class="bg-black overflow-x-hidden">
+    <header>
+        
+        <section class="fixed top-0 w-full bg-gradient-to-b from-black text-white">
+
+            <div class="flex xl:flex-row flex-col items-center py-5 px-12 ml-2">
+
+               <!------------------Netflix logo------------------->
+                <a href="">
+                    <img class="h-20 w-16 md:w-32 lg:w-48sm cursor-pointer"" src="./Assets/img/logo/netflix.png">
+                </a>
+              <!-----------------------first nav bar--------------->
+                <nav class="hidden xl:flex space-x-6 ml-10 text-sm font-light w-1/2" >         
+                    <a href="#" class="font-medium">Home</a>
+  
+                    <a href="#"class="hover:text-gray-400">TV shows</a>
+                         
+                    <a href="#" class="hover:text-gray-400" >Movies</a> 
+                         
+                    <a href="#" class="hover:text-gray-400" >New & Popular</a>
+                         
+                    <a href="#"class="hover:text-gray-400" >My List</a>
+              </nav>   
+
+              <!--------------------2nd nav bar----------------------->
+              <nav class="hidden xl:flex justify-center items-center space-x-8 ml-auto text-base font-semibold">
+                 <button><i class="fa-solid fa-magnifying-glass hover:shadow"></i></button>
+               
+                 <button><i class="fa-solid fa-gift hover:shadow"></i></button>
+               
+                 <button><i class="fa-solid fa-bell hover:shadow"></i></button>
+
+                 <button class="flex items-center focus:outline-none">
+                      <img src="./Assets/img/avatar.jpg" alt="Avatar" class="w-8 h-8 rounded"/>
+                     <i class="fa-solid fa-caret-down"></i>
+                 </button>
+             </nav>
+
+            </div>
+
+        </section>
+
+      <!------------ header + wallpaper + biography       flex flex-col xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-8/12 space-y-2 py-12-------------------->
+        <section>
+            <div>
+
+                <img src="./Assets/img/logo/jw1.jpg" alt="John wick" class="w-full h-screen object-cover"/>  
+                
+                <!-- logo + storyline -->
+
+                <div class="absolute top-40 px-16">
+
+                  <div class="Sspace-y-6 font-serif mt-40">
+                      <div class="flex">
+                          <img src="./Assets/img/logo/net.png" class="w-10 h-5" alt="logo netflix">
+                          <p class=" text-sm font-bold ">FILM</p>
+                      </div>
+
+                      <div class="text-gray-300">
+                          <p class="text-8xl">JOHN WICK 3</p>
+                      </div>
+                      <div class="text-white">
+                          <p>John Wick is declared excommunicado 
+                          and a hefty bounty is <br>set on him after 
+                         he murders an international crime lord.<br> He
+                         sets out to seek help to save himself from 
+                         ruthless<br> hitmen and bounty hunters.</p>
+                      </div>
+
+                      <!-------------------------------Button play-more info---------------------->
+
+                      <div class="flex flex-row w-full space-x-4">
+                         <div class="flex items-center mt-4">
+                             <input type="submit" value="Play" 
+                               class="bg-white text-black w-20 h-10 px-4 py-2 outline-none cursor-pointer
+                               rounded border-2 border-transparent 
+                               hover:border-black hover:shadow"/>
+                              <span><i class="fa-solid fa-caret-right -ml-20 px-2 text-black "></i></span>
+                  
+                              <input type="submit" value="More info" 
+                               class="bg-gray-400 text-white ml-20 w-22 h-10 px-4 py-2 pr-1 pl-6 outline-none cursor-pointer
+                               rounded border-2 border-transparent 
+                               hover:border-white hover:shadow"/>
+                               <i class="fa-solid fa-circle-info -ml-24 "></i>
+                          </div>
+                      </div>
+                  </div>
+
+                </div>
+
+            </div>
+            
+            <div class="absolute bottom-0 bg-gradient-to-t from-black w-full h-40"></div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <!----------------------------section my list---------------------------->
+
+        <section class="mt-6 text-white">
+
+            <div>
+                <div class="ml-10 mb-2 font-bold"> 
+                    <p>My List</p>
+                </div>
+
+                <div class="duration-200 flex justify-center space-x-3">
+
+                    <div>
+                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-1.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-2.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-3.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-4.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-5.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-6.JPG" alt=""></a></div>                  
+                    </div>
+                    <!-----
+                    <div>
+                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-7.JPG" alt=""></a></div>
+                    </div>
+
+                    <div>
+                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-8.JPG" alt=""></a></div>
+                    </div>
+                -->
+
+                </div>
+            </div>
+        </section>
+
+                <!--------------------------------section TV show-------------------------------->
+
+        <section class="mt-10 text-white">
+
+            <div>
+                <div class="ml-10 mb-2 font-bold"> 
+                    <p>TV shows</p>
+                </div>
+
+                <div class="duration-200 flex justify-center space-x-3">
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-1.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-2.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-3.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-4.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-5.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-6.JPG" alt=""></a></div>
+                
+                </div>
+            </div>
+        </section>
+
+            <!---------------------------------------section trending now---------------------------------->
+
+        <section class="mt-10 text-white">
+
+            <div>
+                <div class="ml-10 mb-2 font-bold"> 
+                    <p>Trending Now</p>
+                </div>
+
+                <div class="duration-200 flex justify-center space-x-3">
+
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-1.JPG" alt=""></a>
+                    </div>
+
+                   <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-2.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-3.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-4.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-5.JPG" alt=""></a>
+                    </div>
+
+                    <div>
+                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-6.JPG " alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+                        <!-----------------------section top 10-------transition duration-700 ease-in-out ...---------------------------->
+
+        <section class="mt-10 Jjustify-center text-white">
+
+            
+                <div class="ml-10 mb-2 font-bold"> 
+                    <p>Top 10 on planet Mars Today</p>
+                </div>
+
+                <div class=" duration-200 flex items-center">
+
+                    <div class="flex items-center space-x-40">
+                       
+
+                        <div class="boxart-size-7x10 boxart-container boxart-rounded ">           
+                          <span>
+                             <img class="items-center w-20 h-40" src="./Assets/img/liste/1.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10 hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-1.JPG" alt=""></a>
+                          </span>
+                        </div>
+
+                        <div class="boxart-size-7x10 boxart-container boxart-rounded ">                        
+                          <span>
+                            <img class="items-center w-20 h-40" src="./Assets/img/liste/2.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-2.JPG" alt=""></a>
+                          </span>
+                        </div>
+
+                        <div class="boxart-size-7x10 boxart-container boxart-rounded">                      
+                           <span>
+                            <img class="items-center w-20 h-40"src="./Assets/img/liste/3.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-3.JPG" alt=""></a>
+                           </span>
+                        </div>
+
+                        <div class="boxart-size-7x10 boxart-container boxart-rounded">
+                          <span>
+                            <img class="items-center w-20 h-40" src="./Assets/img/liste/4.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-4.JPG" alt=""></a>
+                          </span>
+                        </div>
+
+                        <div class="boxart-size-7x10 boxart-container boxart-rounded">
+                          <span>
+                            <img class="items-center w-20 h-40" src="./Assets/img/liste/5.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-5.JPG" alt=""></a>
+                          </span>
+                        </div>
+
+                        <div class="boxart-size-7x10 boxart-container boxart-rounded">
+                             <span>
+                                <img class="items-center w-20 h-40" src="./Assets/img/liste/6.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-6.JPG" alt=""></a></div>   
+                             </span>
+                        </div>
+
+                    </div>
+
+                </div>
+        
+        </section>
+
+                <!------------------------------Watch it Again----------------------------------------->
+                <section class="mt-10 text-white">
+
+                    <div>
+                        <div class="ml-10 mb-2 font-bold"> 
+                             <p>Watch it Again</p>
+                        </div>
+        
+                        <div class="duration-200 flex justify-center space-x-3">
+        
+                            <div>
+                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-1.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-2.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-3.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-4.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-5.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-6.JPG" alt=""></a></div>                  
+                            </div>
+                            <!-----
+                            <div>
+                                <a href="#"><img class="w-60 h-60 rounded" src="./Assets/img/it/ml-7.JPG" alt=""></a></div>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-60 h-60 rounded" src="./Assets/img/it/ml-8.JPG" alt=""></a></div>
+                            </div>
+                            --->
+        
+                        </div>
+                    </div>
+                </section>
+
+                    <!---------------------------------------tv show by genre-------------------------------------------->
+
+                <section class="mt-6 text-white">
+
+                    <div>
+                        <div class="ml-10 mb-2 font-bold"> 
+                            <p>TV show by Genre</p>
+                        </div>
+        
+                        <div class="duration-200 grid grid-cols-6 gap-6">
+        
+                            <div class="z-0 relative hover:bg-gradient-to-r from-gray-900 bg-cover bg-center font-bold h-14  rounded border-white" style="background-image: url(./Assets/img/it/ml-2.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Action</p></a>
+                            </div>
+        
+                            <div class="z-10 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-3.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Anime</p></a>
+                            </div>
+        
+                            <div class="z-20 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-4.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Children</p></a>
+                            </div>
+        
+                            <div class="z-30 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-5.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Comedy</p></a>
+                            </div>
+        
+                            <div class="z-40 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-6.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Docuseries</p></a>
+                            </div>
+                        
+                            <div class="z-50 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-7.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Drama</p></a>
+                            </div>
+        
+                            <div class="z-60 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-1.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Fantasy</p></a>
+                            </div>
+                            
+                            <div class="z-70 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-2.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">French</p></a>
+                            </div>
+        
+                            <div class="z-80 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-3.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Horror</p></a>
+                            </div>
+        
+                            <div class="z-90 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-4.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">International</p></a>
+                            </div>
+        
+                            <div class="z-100 relativebg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-5.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Reality</p></a>
+                            </div>
+
+                            <div class="z-110 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-6.JPG)  ">
+                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Romance</p></a>
+                            </div>
+                                <!----
+                            <div>
+                                <a href="#"><p>Sci-Fi</p>                 
+                            </div>
+
+                            <div>
+                                <a href="#"><p>Thriller</p>               
+                            </div>
+                        
+                                ----->
+                        </div>
+                    </div>
+                </section>
+
+                    <!--------------------------Netflix Original-------------------------------------->
+
+                <section class="mt-10 text-white">
+
+                    <div>
+                        <div class="ml-10 mb-2 font-bold"> 
+                            <p>Netflix Original</p>
+                        </div>
+        
+                        <div class="duration-200 flex items-center space-x-3">
+        
+                            <div>
+                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-1.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-2.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-3.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-4.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-5.JPG" alt=""></a>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-6.JPG" alt=""></a></div>                  
+                            </div>
+                            <!-----
+                            <div>
+                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-7.JPG" alt=""></a></div>
+                            </div>
+        
+                            <div>
+                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-8.JPG" alt=""></a></div>
+                            </div>
+                        -->
+        
+                        </div>
+                    </div>
+                </section>
+
+
+       
+    </main>
+    <footer>
+        <section class="mt-40 text-gray-500">
+            <div class="ml-40">
+                <div class="flex space-x-6">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                
+                <div class="mt-6 grid grid-cols-4 space-x- space-y-2">
+        
+                    <div class="z-0 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Audio and Subtitle</p></a>
+                    </div>
+                    
+                    <div class="z-10 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Audio Description</p></a>
+                    </div>
+                    
+                    <div class="z-20 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Help Center</p></a>
+                    </div>
+
+                    <div class="z-30 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Gift Cards</p></a>
+                    </div>
+
+                    <div class="z-40 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Media Center</p></a>
+                    </div>
+
+                    <div class="z-50 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Investor Relations</p></a>
+                    </div>
+
+                    <div class="z-60 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Jobs</p></a>
+                    </div>
+
+                    <div class="z-70 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Terms of Use</p></a>
+                    </div>
+
+                    <div class="z-80 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Privacy</p></a>
+                    </div>
+
+                    <div class="z-90 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Legal Notices</p></a>
+                    </div>
+
+                    <div class="z-100 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Cookie Preferences</p></a>
+                    </div>
+
+                    <div class="z-110 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Corporate Information</p></a>
+                    </div>
+
+                    <div class="z-120 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Action</p></a>
+                    </div>
+
+                    <div class="z-130 ">
+                        <a href="#"><p class="text-gray-500 text-sm">Contact Us</p></a>
+                    </div>
+                     
+                </div>
+
+                <div class="mt-6">
+                    <input class="text-gray-500 text-sm bg-black w-24 pr-0 pl-2" type="text" value="Service Code">
+                </div>
+
+                <div class="mt-6 text-sm text-gray-500 mb-6">
+                    <p>1997-2022 Netflix, Inc.{i-00000000000000000000000000}</p>
+                </div>
+                
+                
+            </div>
+        </section>  
+
+        
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
