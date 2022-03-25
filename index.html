@@ -17,11 +17,13 @@
         
         <section id="bar" class="fixed top-0 w-full bg-gradient-to-b from-black text-white z-50">
 
+            
+
             <div class="story flex xl:flex-row flex-col items-center py-5 px-12 ml-2">
 
                <!------------------Netflix logo------------------->
                 <a href="">
-                    <img class="h-20 w-16 md:w-32 lg:w-48sm cursor-pointer"" src="./Assets/img/logo/netflix.png">
+                    <img class="h-20 w-16 md:w-32 lg:w-48sm cursor-pointer" src="./Assets/img/logo/netflix.png">
                 </a>
               <!-----------------------first nav bar--------------->
                 <nav class="hidden xl:flex space-x-6 ml-10 text-lg font-light w-1/2" >         
@@ -59,8 +61,12 @@
 
         <section>
             <div>
+                <img onmouseover="hoverVideo(this)" onmouseout="setImage(this)" src="./Assets/img/logo/jw1.jpg" alt="John wick" 
+                class="w-full h-screen object-cover hover:opacity-0 cursor-pointer"/>
 
-                <img src="./Assets/img/logo/jw1.jpg" alt="John wick" class="w-full h-screen object-cover"/>  
+                <video src="./Assets/img/video/John Wick_ Chapter 3.mp4" 
+                class="absolute top-0 w-full h-screen object-cover" 
+                data-play="Hover" muted="muted" autoplay="autoplay" loop="infinite"></video>
                 
                 <!-- logo + storyline -->
 
@@ -122,7 +128,7 @@
 
        <!-- 1st step : overflow hidden -->
        <!-- 2nd step : overflow scroll -->
-       <section class="carousel overflow-x-hidden scroll-smooth mb-12">
+       <section class="carousel overflow-x-hidden scroll-smooth overflow-x-visible mb-12">
 
            <!-- carousel -->
            <div class="flex space-x-2">
@@ -134,7 +140,7 @@
 
                <div class="relative">
                    <div class="w-64 h-36 ml-16">
-                       <a href="#"><img src="./assets/img/it/my list/ml-1.JPG" class="absolute rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                       <a href="#"><img src="./assets/img/it/my list/ml-1.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
                    </div>
                </div>
                <div class="relative">
@@ -188,7 +194,7 @@
                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
                </div>
 
-               <script>
+               <script type="text/javascript">
                    // right event
                    function rightScroll(carousel, rightArrow) {
 
@@ -217,23 +223,38 @@
                    // Nav bar
                      window.onscroll = function() {
 
-                     if (document.documentElement.scrollTop > 80) {
+                     if (document.documentElement.scrollTop > 80 ) {
 
                      document.getElementById("bar").style.background = "black";
 
-                     document.getElementById("bar").style.padding = "10px";
+                  
 
                     } else {
 
                       document.getElementById("bar").style.background = "none";
 
-                     document.getElementById("bar").style.padding = "";
+                     
 
                        }
 
-                    };
-                   
-               </script>
+                    }
+                     // Video Play
+                     document.addEventListener('mousover', hoverVideo, false);
+                     var vid= document.getElementsByTagName('video');
+                     [].forEach.call(vid, function(item) {
+                         item.addEventListener('mouseover', hoverVideo, false);
+                         item.addEventListener('mouseover', hideVideo, false);
+                         });
+                      function hoverVideo(e)
+                      {
+                          this.play();
+                      }
+                      function hideVideo(e);
+                      {
+                          this.pause(e);
+                      }
+                </script>
+               
            </div>
 
        </section>
@@ -244,7 +265,7 @@
 
        <!-- 1st step : overflow hidden -->
        <!-- 2nd step : overflow scroll -->
-       <section class="carousel2 overflow-x-hidden  scroll-smooth mb-12">
+       <section class="carousel2 overflow-x-hidden  scroll-smooth overflow-x-visible mb-12">
 
            <!-- carousel -->
            <div class="flex space-x-2">
@@ -318,7 +339,7 @@
 
         <!-- 1st step : overflow hidden -->
         <!-- 2nd step : overflow scroll -->
-        <section class="carousel3 overflow-x-hidden  scroll-smooth mb-12">
+        <section class="carousel3 overflow-x-hidden  scroll-smooth overflow-x-visible mb-12">
  
             <!-- carousel -->
             <div class="flex space-x-2">
@@ -386,7 +407,7 @@
       
         <p class="py-2 font-semibold text-white text-xl ml-16">Top 10 on planet Mars Today</p>
 
-        <section class="carousel9 mt-16 overflow-hidden scroll-smooth">
+        <section class="carousel9 mt-16 overflow-hidden scroll-smooth overflow-x-visible">
 
             <div class="flex space-x-2">
 
@@ -481,7 +502,7 @@
 
        <!-- 1st step : overflow hidden -->
        <!-- 2nd step : overflow scroll -->
-       <section class="carousel4 overflow-x-hidden  scroll-smooth mb-12">
+       <section class="carousel4 overflow-x-hidden  scroll-smooth overflow-x-visible mb-12">
 
            <!-- carousel -->
            <div class="flex space-x-2">
@@ -745,7 +766,7 @@
 
      <!-- 1st step : overflow hidden -->
      <!-- 2nd step : overflow scroll -->
-     <section class="carousel5 overflow-x-hidden scroll-smooth mb-12">
+     <section class="carousel5 overflow-x-hidden scroll-smooth overflow-x-visible mb-12">
 
          <!-- carousel -->
          <div class="flex space-x-2">
@@ -819,7 +840,7 @@
 
        <!-- 1st step : overflow hidden -->
        <!-- 2nd step : overflow scroll -->
-       <section class="carousel6 overflow-x-hidden scroll-smooth mb-12">
+       <section class="carousel6 overflow-x-hidden scroll-smooth overflow-x-visible mb-12">
 
            <!-- carousel -->
            <div class="flex space-x-2">
@@ -893,7 +914,7 @@
 
         <!-- 1st step : overflow hidden -->
         <!-- 2nd step : overflow scroll -->
-        <section class="carousel7 overflow-x-hidden scroll-smooth mb-12">
+        <section class="carousel7 overflow-x-hidden scroll-smooth overflow-x-visible mb-12">
  
             <!-- carousel -->
             <div class="flex space-x-2">
@@ -966,7 +987,7 @@
 
         <!-- 1st step : overflow hidden -->
         <!-- 2nd step : overflow scroll -->
-        <section class="carousel8 overflow-x-hidden scroll-smooth mb-12">
+        <section class="carousel8 overflow-x-hidden scroll-smooth overflow-x-visible mb-12">
  
             <!-- carousel -->
             <div class="flex space-x-2">
