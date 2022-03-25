@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="./Netflix_icon.svg.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="description" content="Watch TV Shows Online, Watch Movies Online">
     <title>Netflix</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
@@ -13,18 +12,19 @@
    
 </head>
 <body class="bg-black overflow-x-hidden">
-    <header>
+    
+    <header class="color-black z-1">
         
-        <section class="fixed top-0 w-full bg-gradient-to-b from-black text-white">
+        <section id="bar" class="fixed top-0 w-full bg-gradient-to-b from-black text-white z-50">
 
-            <div class="flex xl:flex-row flex-col items-center py-5 px-12 ml-2">
+            <div class="story flex xl:flex-row flex-col items-center py-5 px-12 ml-2">
 
                <!------------------Netflix logo------------------->
                 <a href="">
                     <img class="h-20 w-16 md:w-32 lg:w-48sm cursor-pointer"" src="./Assets/img/logo/netflix.png">
                 </a>
               <!-----------------------first nav bar--------------->
-                <nav class="hidden xl:flex space-x-6 ml-10 text-sm font-light w-1/2" >         
+                <nav class="hidden xl:flex space-x-6 ml-10 text-lg font-light w-1/2" >         
                     <a href="#" class="font-medium">Home</a>
   
                     <a href="#"class="hover:text-gray-400">TV shows</a>
@@ -36,7 +36,8 @@
                     <a href="#"class="hover:text-gray-400" >My List</a>
               </nav>   
 
-              <!--------------------2nd nav bar----------------------->
+             <!------------------------------------------------2nd nav bar----------------------------------------->
+
               <nav class="hidden xl:flex justify-center items-center space-x-8 ml-auto text-base font-semibold">
                  <button><i class="fa-solid fa-magnifying-glass hover:shadow"></i></button>
                
@@ -54,7 +55,8 @@
 
         </section>
 
-      <!------------ header + wallpaper + biography       flex flex-col xl:w-5/12 lg:w-6/12 md:w-8/12 sm:w-8/12 space-y-2 py-12-------------------->
+      <!----------------------------------------- header + wallpaper + biography---------------------------------------->
+
         <section>
             <div>
 
@@ -84,6 +86,7 @@
                       <!-------------------------------Button play-more info---------------------->
 
                       <div class="flex flex-row w-full space-x-4">
+
                          <div class="flex items-center mt-4">
                              <input type="submit" value="Play" 
                                class="bg-white text-black w-20 h-10 px-4 py-2 outline-none cursor-pointer
@@ -112,440 +115,996 @@
 
     <main>
 
-        <!----------------------------section my list---------------------------->
+        <!---------------------------------------------section my list-------------------------------------------->
 
-        <section class="mt-6 text-white">
+       <!-- My List -->
+       <p class="py-2 font-semibold text-white text-xl ml-16">My List</p>
 
-            <div>
-                <div class="ml-10 mb-2 font-bold"> 
-                    <p>My List</p>
-                </div>
+       <!-- 1st step : overflow hidden -->
+       <!-- 2nd step : overflow scroll -->
+       <section class="carousel overflow-x-hidden scroll-smooth mb-12">
 
-                <div class="duration-200 flex justify-center space-x-3">
+           <!-- carousel -->
+           <div class="flex space-x-2">
 
-                    <div>
-                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-1.JPG" alt=""></a>
-                    </div>
+               <!-- arrow left-->
+               <div class="absolute left-0 z-30 cursor-pointer leftArrow" onClick="leftScroll('.carousel', '.leftArrow')">
+                   <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+               </div>
 
-                    <div>
-                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-2.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-3.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-4.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-5.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-6.JPG" alt=""></a></div>                  
-                    </div>
-                    <!-----
-                    <div>
-                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-7.JPG" alt=""></a></div>
-                    </div>
-
-                    <div>
-                        <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-8.JPG" alt=""></a></div>
-                    </div>
-                -->
-
-                </div>
-            </div>
-        </section>
-
-                <!--------------------------------section TV show-------------------------------->
-
-        <section class="mt-10 text-white">
-
-            <div>
-                <div class="ml-10 mb-2 font-bold"> 
-                    <p>TV shows</p>
-                </div>
-
-                <div class="duration-200 flex justify-center space-x-3">
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-1.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-2.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-3.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-4.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-5.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tv-6.JPG" alt=""></a></div>
-                
+               <div class="relative">
+                   <div class="w-64 h-36 ml-16">
+                       <a href="#"><img src="./assets/img/it/my list/ml-1.JPG" class="absolute rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/my list/ml-2.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/my list/ml-3.JPG" class="rounded w-64 h-36 rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/drama/dr-2.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/my list/ml-4.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/my list/ml-5.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/my list/ml-6.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/imG/it/my list/ml-8.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/my list/ml-9.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                <div class="w-64 h-36 ">
+                    <a href="#"><img src="./assets/img/it/my list/ml-10.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
                 </div>
             </div>
-        </section>
 
-            <!---------------------------------------section trending now---------------------------------->
+               <!-- arrow right -->
+               <div class="absolute right-0 cursor-pointer rightArrow" onClick="rightScroll('.carousel', '.rightArrow')">
+                   <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+               </div>
 
-        <section class="mt-10 text-white">
+               <script>
+                   // right event
+                   function rightScroll(carousel, rightArrow) {
 
-            <div>
-                <div class="ml-10 mb-2 font-bold"> 
-                    <p>Trending Now</p>
-                </div>
+                       const scroll = document.querySelector(carousel);
 
-                <div class="duration-200 flex justify-center space-x-3">
-
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-1.JPG" alt=""></a>
-                    </div>
-
-                   <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-2.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-3.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-4.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-5.JPG" alt=""></a>
-                    </div>
-
-                    <div>
-                        <a href=""><img class="w-60 h-30 rounded" src="./Assets/img/it/tr-6.JPG " alt=""></a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-                        <!-----------------------section top 10-------transition duration-700 ease-in-out ...---------------------------->
-
-        <section class="mt-10 Jjustify-center text-white">
-
-            
-                <div class="ml-10 mb-2 font-bold"> 
-                    <p>Top 10 on planet Mars Today</p>
-                </div>
-
-                <div class=" duration-200 flex items-center">
-
-                    <div class="flex items-center space-x-40">
+                       const right = document.querySelector(rightArrow);
                        
+                       right.addEventListener("click", () => {
+                           scroll.scrollLeft += scroll.offsetWidth;
+                       })
 
-                        <div class="boxart-size-7x10 boxart-container boxart-rounded ">           
-                          <span>
-                             <img class="items-center w-20 h-40" src="./Assets/img/liste/1.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10 hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-1.JPG" alt=""></a>
-                          </span>
-                        </div>
+                   }
 
-                        <div class="boxart-size-7x10 boxart-container boxart-rounded ">                        
-                          <span>
-                            <img class="items-center w-20 h-40" src="./Assets/img/liste/2.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-2.JPG" alt=""></a>
-                          </span>
-                        </div>
+                   // left event
+                   function leftScroll(carousel, leftArrow) {
 
-                        <div class="boxart-size-7x10 boxart-container boxart-rounded">                      
-                           <span>
-                            <img class="items-center w-20 h-40"src="./Assets/img/liste/3.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-3.JPG" alt=""></a>
-                           </span>
-                        </div>
+                       const scroll = document.querySelector(carousel);
 
-                        <div class="boxart-size-7x10 boxart-container boxart-rounded">
-                          <span>
-                            <img class="items-center w-20 h-40" src="./Assets/img/liste/4.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-4.JPG" alt=""></a>
-                          </span>
-                        </div>
+                       const left = document.querySelector(leftArrow);
 
-                        <div class="boxart-size-7x10 boxart-container boxart-rounded">
-                          <span>
-                            <img class="items-center w-20 h-40" src="./Assets/img/liste/5.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-5.JPG" alt=""></a>
-                          </span>
-                        </div>
+                       left.addEventListener("click", () => {
+                           scroll.scrollLeft -= scroll.offsetWidth;
+                       })
 
-                        <div class="boxart-size-7x10 boxart-container boxart-rounded">
-                             <span>
-                                <img class="items-center w-20 h-40" src="./Assets/img/liste/6.png" alt=""><a href="#"><img class="absolute -mt-40 ml-10  hover:scale-y-105 h-40 w-40 rounded" src="./Assets/img/it/t-6.JPG" alt=""></a></div>   
-                             </span>
-                        </div>
+                    }
+                   // Nav bar
+                     window.onscroll = function() {
 
+                     if (document.documentElement.scrollTop > 80 ) {
+
+                     document.getElementById("bar").style.background = "black";
+
+                  
+
+                    } else {
+
+                      document.getElementById("bar").style.background = "none";
+
+                     
+
+                       }
+
+                    };
+                   
+               </script>
+           </div>
+
+       </section>
+
+        <!--------------------------------section TV show-------------------------------->
+
+        <p class="py-2 font-semibold text-white text-xl ml-16">TV show</p>
+
+       <!-- 1st step : overflow hidden -->
+       <!-- 2nd step : overflow scroll -->
+       <section class="carousel2 overflow-x-hidden  scroll-smooth mb-12">
+
+           <!-- carousel -->
+           <div class="flex space-x-2">
+
+               <!-- arrow left-->
+               <div class="absolute left-0 z-30 cursor-pointer leftArrow2" onClick="leftScroll('.carousel2', '.leftArrow2')">
+                   <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+               </div>
+
+               <div class="relative">
+                   <div class="w-64 h-36 ml-16 ">
+                       <a href="#"><img src="./assets/img/it/tv show/tv-1.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/tv show/tv-2.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/tv show/tv-3.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/tv show/tv-4.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/tv show/tv-5.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36">
+                       <a href="#"><img src="./assets/img/it/tv show/tv-6.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/tv show/tv-7.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/imG/it/tv show/tv-8.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/tv show/tv-9.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                 <div class="w-64 h-36 ">
+                     <a href="#"><img src="./assets/img/it/tv show/tv-10.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+               </div>
+
+             <!-- arrow right -->
+               <div class="absolute right-0 cursor-pointer rightArrow2" onClick="rightScroll('.carousel2', '.rightArrow2')">
+                   <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+               </div>
+                
+        </section>
+
+        <!---------------------------------------section trending now---------------------------------->
+
+        <p class="py-2 font-semibold text-white text-xl ml-16">Trending Now</p>
+
+        <!-- 1st step : overflow hidden -->
+        <!-- 2nd step : overflow scroll -->
+        <section class="carousel3 overflow-x-hidden  scroll-smooth mb-12">
+ 
+            <!-- carousel -->
+            <div class="flex space-x-2">
+ 
+                <!-- arrow left-->
+                <div class="absolute left-0 z-30 cursor-pointer leftArrow3" onClick="leftScroll('.carousel3', '.leftArrow3')">
+                    <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+ 
+                <div class="relative">
+                    <div class="w-64 h-36 ml-16 ">
+                        <a href="#"><img src="./assets/img/it/Trending/tr-1.JPG" class="rounded w-64 h-36"/></a>
                     </div>
-
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/Trending/tr-2.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/Trending/tr-3.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/Trending/tr-4.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/Trending/tr-5.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/Trending/tr-6.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/Trending/tr-7.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/imG/it/Trending/tr-8.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/Trending/tr-9.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+ 
+                <!-- arrow right -->
+                <div class="absolute right-0 cursor-pointer rightArrow3" onClick="rightScroll('.carousel3', '.rightArrow3')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
                 </div>
         
         </section>
-
-                <!------------------------------Watch it Again----------------------------------------->
-                <section class="mt-10 text-white">
-
-                    <div>
-                        <div class="ml-10 mb-2 font-bold"> 
-                             <p>Watch it Again</p>
-                        </div>
-        
-                        <div class="duration-200 flex justify-center space-x-3">
-        
-                            <div>
-                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-1.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-2.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-3.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-4.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-5.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-6.JPG" alt=""></a></div>                  
-                            </div>
-                            <!-----
-                            <div>
-                                <a href="#"><img class="w-60 h-60 rounded" src="./Assets/img/it/ml-7.JPG" alt=""></a></div>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-60 h-60 rounded" src="./Assets/img/it/ml-8.JPG" alt=""></a></div>
-                            </div>
-                            --->
-        
-                        </div>
-                    </div>
-                </section>
-
-                    <!---------------------------------------tv show by genre-------------------------------------------->
-
-                <section class="mt-6 text-white">
-
-                    <div>
-                        <div class="ml-10 mb-2 font-bold"> 
-                            <p>TV show by Genre</p>
-                        </div>
-        
-                        <div class="duration-200 grid grid-cols-6 gap-6">
-        
-                            <div class="z-0 relative hover:bg-gradient-to-r from-gray-900 bg-cover bg-center font-bold h-14  rounded border-white" style="background-image: url(./Assets/img/it/ml-2.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Action</p></a>
-                            </div>
-        
-                            <div class="z-10 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-3.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Anime</p></a>
-                            </div>
-        
-                            <div class="z-20 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-4.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Children</p></a>
-                            </div>
-        
-                            <div class="z-30 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-5.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Comedy</p></a>
-                            </div>
-        
-                            <div class="z-40 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-6.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Docuseries</p></a>
-                            </div>
-                        
-                            <div class="z-50 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/ml-7.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Drama</p></a>
-                            </div>
-        
-                            <div class="z-60 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-1.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Fantasy</p></a>
-                            </div>
-                            
-                            <div class="z-70 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-2.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">French</p></a>
-                            </div>
-        
-                            <div class="z-80 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-3.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Horror</p></a>
-                            </div>
-        
-                            <div class="z-90 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-4.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">International</p></a>
-                            </div>
-        
-                            <div class="z-100 relativebg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-5.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Reality</p></a>
-                            </div>
-
-                            <div class="z-110 relative bg-cover bg-center font-bold h-14 bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-r rounded border-white" style="background-image: url(./Assets/img/it/t-6.JPG)  ">
-                                <a href="#"><p class="text-blue-400 pl-6 pt-4 text-xl">Romance</p></a>
-                            </div>
-                                <!----
-                            <div>
-                                <a href="#"><p>Sci-Fi</p>                 
-                            </div>
-
-                            <div>
-                                <a href="#"><p>Thriller</p>               
-                            </div>
-                        
-                                ----->
-                        </div>
-                    </div>
-                </section>
-
-                    <!--------------------------Netflix Original-------------------------------------->
-
-                <section class="mt-10 text-white">
-
-                    <div>
-                        <div class="ml-10 mb-2 font-bold"> 
-                            <p>Netflix Original</p>
-                        </div>
-        
-                        <div class="duration-200 flex items-center space-x-3">
-        
-                            <div>
-                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-1.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-2.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-3.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-4.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-5.JPG" alt=""></a>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-30 h-60 rounded" src="./Assets/img/it/no-6.JPG" alt=""></a></div>                  
-                            </div>
-                            <!-----
-                            <div>
-                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-7.JPG" alt=""></a></div>
-                            </div>
-        
-                            <div>
-                                <a href="#"><img class="w-60 h-30 rounded" src="./Assets/img/it/ml-8.JPG" alt=""></a></div>
-                            </div>
-                        -->
-        
-                        </div>
-                    </div>
-                </section>
-
 
        
-    </main>
-    <footer>
-        <section class="mt-40 text-gray-500">
-            <div class="ml-40">
-                <div class="flex space-x-6">
-                    <i class="fa-brands fa-facebook-square"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-twitter"></i>
+      <!-------------------------------------------------------section top 10--------------------------------------------------->
+      
+        <p class="py-2 font-semibold text-white text-xl ml-16">Top 10 on planet Mars Today</p>
+
+        <section class="carousel9 mt-16 overflow-hidden scroll-smooth">
+
+            <div class="flex space-x-2">
+
+                <div class="absolute left-0 z-30 cursor-pointer leftArrow9" onClick="leftScroll('.carousel9', '.leftArrow9')">
+                    <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
                 </div>
                 
-                <div class="mt-6 grid grid-cols-4 space-x- space-y-2">
-        
-                    <div class="z-0 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Audio and Subtitle</p></a>
+                <div class="relative">
+                    <div class="flex items-center w-64 ">
+                        <a href="#"><img src="./assets/img/liste/top_1.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded  w-64 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-1.JPG"></a>
                     </div>
-                    
-                    <div class="z-10 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Audio Description</p></a>
-                    </div>
-                    
-                    <div class="z-20 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Help Center</p></a>
-                    </div>
-
-                    <div class="z-30 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Gift Cards</p></a>
-                    </div>
-
-                    <div class="z-40 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Media Center</p></a>
-                    </div>
-
-                    <div class="z-50 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Investor Relations</p></a>
-                    </div>
-
-                    <div class="z-60 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Jobs</p></a>
-                    </div>
-
-                    <div class="z-70 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Terms of Use</p></a>
-                    </div>
-
-                    <div class="z-80 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Privacy</p></a>
-                    </div>
-
-                    <div class="z-90 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Legal Notices</p></a>
-                    </div>
-
-                    <div class="z-100 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Cookie Preferences</p></a>
-                    </div>
-
-                    <div class="z-110 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Corporate Information</p></a>
-                    </div>
-
-                    <div class="z-120 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Action</p></a>
-                    </div>
-
-                    <div class="z-130 ">
-                        <a href="#"><p class="text-gray-500 text-sm">Contact Us</p></a>
-                    </div>
-                     
                 </div>
 
-                <div class="mt-6">
-                    <input class="text-gray-500 text-sm bg-black w-24 pr-0 pl-2" type="text" value="Service Code">
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_2.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded w-64 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-2.JPG"></a>
+                    </div>
                 </div>
 
-                <div class="mt-6 text-sm text-gray-500 mb-6">
-                    <p>1997-2022 Netflix, Inc.{i-00000000000000000000000000}</p>
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_3.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded w-64 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-3.JPG"></a>
+                    </div>
                 </div>
-                
-                
+
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_4.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded w-64 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-4.JPG"></a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_5.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded w-64 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-5.JPG"></a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_6.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded w-64opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-6.JPG"></a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_7.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded w-64 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-7.JPG"></a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_8.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded w-64 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-8.JPG"></a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_9.png" alt="" class=""></a>
+                        <a href="#"><img class="rounded w-64 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden" src="./assets/img/it/top10/top-9.JPG"></a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="flex items-center w-64">
+                        <a href="#"><img src="./assets/img/liste/top_10.png" alt="" class=""></a>
+                        <a href="#"><img class=" rounded opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden " src="./assets/img/it/top10/top-10.JPG"></a>
+                    </div>
+                </div>
+
+                <!-- arrow right -->
+                 <div class="absolute right-0 cursor-pointer rightArrow9" onClick="rightScroll('.carousel9', '.rightArrow9')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+
             </div>
+
+
         </section>  
 
+
+        <!------------------------------------------------------Watch it Again------------------------------------------------->
+
+        <p class="py-2 font-semibold text-white mt-16 text-xl ml-16">Watch it Again</p>
+
+       <!-- 1st step : overflow hidden -->
+       <!-- 2nd step : overflow scroll -->
+       <section class="carousel4 overflow-x-hidden  scroll-smooth mb-12">
+
+           <!-- carousel -->
+           <div class="flex space-x-2">
+
+               <!-- arrow left-->
+               <div class="absolute left-0 z-30 cursor-pointer leftArrow4" onClick="leftScroll('.carousel4', '.leftArrow4')">
+                   <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+               </div>
+
+               <div class="relative">
+                   <div class="w-64 h-36 ml-16 ">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a.JPG" class="rounded w-64 h-36opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a1.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a2.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a3.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a4.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a5.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a6.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/imG/it/Watch/w-a7.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a8.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                  <div class="w-64 h-36">
+                     <a href="#"><img src="./assets/img/it/Watch/w-a9.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/Watch/w-a10.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+
+               <!-- arrow right -->
+               <div class="absolute right-0 cursor-pointer rightArrow4" onClick="rightScroll('.carousel4', '.rightArrow4')">
+                   <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+               </div>
         
+        </section>
+
+
+     <!---------------------------------------tv show by genre-------------------------------------------->
+
+    
+        <p class="py-2 font-semibold text-white text-xl ml-16">TV Shows by Genre</p>
+
+        <section class=" content-center text-white font-bold ">
+           
+            <div class="ml-10 grid gap-4  mx-auto xl:grid-cols-7 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2">
+
+               <a href="">
+                   <div>
+                       <div class="w-full overflow-hidden rounded">
+                           <p class="absolute font-semibold mx-4 my-4 z-40">Action</p>
+                           <div class="relative">
+                              <div  class="absolute w-48 h-14 bg-gradient-to-r from-orange-600 hover:opacity-100 rounded"></div>
+                              <img  src="./assets/img/it/tv show/tv-1.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                          </div>
+                       </div>
+                   </div>
+               </a>
+
+               <a href="">
+                  <div>
+                     <div class="w-full overflow-hidden rounded">
+                         <p class="absolute font-semibold mx-2 my-5 z-40">Anime</p>
+                         <div class="relative">
+                             <div  class="absolute w-48 h-14 bg-gradient-to-r from-pink-600 hover:opacity-100 rounded"></div>
+                             <img  src="./assets/img/it/tv show/tv-2.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                        </div>
+                     </div>
+                  </div>
+              </a>
+
+             <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-40">Children</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-indigo-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-3.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+             </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-40">Comedy</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-yellow-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-4.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">Docuseries</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14  bg-gradient-to-r from-green-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-5.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">Drama</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-pink-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-6.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">Fantasy</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-red-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-7.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">French</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-blue-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-8.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">Horror</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-violet-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-9.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">International</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-lime-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-10.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">Reality</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-pink-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-11.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">Romance</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-amber-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-12.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">Sci-Fi</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-cyan-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-13.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div>
+                    <div class="w-full overflow-hidden rounded">
+                        <p class="absolute font-semibold mx-2 my-5 z-50">Thriller</p>
+                        <div class="relative">
+                           <div  class="absolute w-48 h-14 bg-gradient-to-r from-purple-600 hover:opacity-100 rounded"></div>
+                           <img  src="./assets/img/it/tv show/tv-14.JPG" alt="" class="w-48 h-14 rounded opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">  
+                       </div>
+                    </div>
+                </div>
+            </a>
+
+            </div>
+           
+                
+        </section>
+
+                
+
+     <!-----------------------------------------Netflix Original-------------------------------------->
+
+     <p class="py-2 font-semibold text-white text-xl ml-16">Netflix Original</p>
+
+     <!-- 1st step : overflow hidden -->
+     <!-- 2nd step : overflow scroll -->
+     <section class="carousel5 overflow-x-hidden scroll-smooth mb-12">
+
+         <!-- carousel -->
+         <div class="flex space-x-2">
+
+             <!-- arrow left-->
+             <div class="absolute left-0 z-30 cursor-pointer leftArrow5" onClick="leftScroll('.carousel5', '.leftArrow5')">
+                 <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+             </div>
+
+             <div class="relative">
+                 <div class=" w-36 h-48">
+                     <a href="#"><img src="./assets/img/it/net-ori/NO-1.JPG" class="rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                 <div class=" w-36 h-48">
+                     <a href="#"><img src="./assets/img/it/net-ori/NO-3.JPG" class="rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                 <div class=" w-36 h-48">
+                     <a href="#"><img src="./assets/img/it/net-ori/NO-4.JPG" class="rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                 <div class="w-36 h-48 ">
+                     <a href="#"><img src="./assets/img/it/net-ori/NO-5.JPG" class="rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden "/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                 <div class="w-36 h-48">
+                     <a href="#"><img src="./assets/img/it/net-ori/NO-6.JPG" class="rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                 <div class="w-36 h-48">
+                     <a href="#"><img src="./assets/img/it/net-ori/NO-7.JPG" class="rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                 <div class="w-36 h-48 ">
+                     <a href="#"><img src="./assets/img/it/net-ori/NO-8.JPG" class="rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                 <div class="w-36 h-48 ">
+                     <a href="#"><img src="./assets/imG/it/net-ori/NO-9.JPG" class="rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                 <div class=" w-36 h-48 ">
+                     <a href="#"><img src="./assets/img/it/net-ori/NP-4.JPG" class="absolute rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                 </div>
+             </div>
+             <div class="relative">
+                <div class=" w-36 h-48">
+                    <a href="#"><img src="./assets/img/it/net-ori/NO-10.JPG" class="absolute rounded w-36 h-64 ml-16 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden "/></a>
+                </div>
+            </div>
+
+             <!-- arrow right -->
+             <div class="absolute right-0 cursor-pointer rightArrow5" onClick="rightScroll('.carousel5', '.rightArrow5')">
+                 <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+             </div>
+     
+     </section>
+
+     <!-----------------------------------------New Release----------------------------------------------------->
+
+     <p class="py-2 font-semibold text-white text-xl ml-16">New Release</p>
+
+       <!-- 1st step : overflow hidden -->
+       <!-- 2nd step : overflow scroll -->
+       <section class="carousel6 overflow-x-hidden scroll-smooth mb-12">
+
+           <!-- carousel -->
+           <div class="flex space-x-2">
+
+               <!-- arrow left-->
+               <div class="absolute left-0 z-30 cursor-pointer leftArrow6" onClick="leftScroll('.carousel6', '.leftArrow6')">
+                   <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+               </div>
+
+               <div class="relative">
+                   <div class="w-64 h-36 ml-16 opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">
+                       <a href="#"><img src="./assets/img/it/n-R/n-r1.JPG" class="rounded w-64 h-36"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/n-R/n-r2.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 n">
+                       <a href="#"><img src="./assets/img/it/n-R/n-r3.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/n-R/n-r4.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/n-R/n-r5.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/n-R/n-r6.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36 ">
+                       <a href="#"><img src="./assets/img/it/n-R/n-r7.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36">
+                       <a href="#"><img src="./assets/imG/it/n-R/n-r8.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="w-64 h-36">
+                       <a href="#"><img src="./assets/img/it/n-R/n-r9.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                   </div>
+               </div>
+               <div class="relative">
+                <div class="w-64 h-36 opacity-30 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden">
+                    <a href="#"><img src="./assets/img/it/n-R/n-r10.JPG" class="rounded w-64 h-36"/></a>
+                </div>
+            </div>
+
+               <!-- arrow right -->
+               <div class="absolute right-0 cursor-pointer rightArrow6" onClick="rightScroll('.carousel6', '.rightArrow6')">
+                   <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+               </div>
+
+        </section>
+
+        <!---------------------------------------------------Comedy--------------------------------------------------------->
+        
+        <p class="py-2 font-semibold text-white text-xl ml-16">Comedy</p>
+
+        <!-- 1st step : overflow hidden -->
+        <!-- 2nd step : overflow scroll -->
+        <section class="carousel7 overflow-x-hidden scroll-smooth mb-12">
+ 
+            <!-- carousel -->
+            <div class="flex space-x-2">
+ 
+                <!-- arrow left-->
+                <div class="absolute left-0 z-30 cursor-pointer leftArrow7" onClick="leftScroll('.carousel7', '.leftArrow7')">
+                    <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+ 
+                <div class="relative">
+                    <div class="w-64 h-36 ml-16">
+                        <a href="#"><img src="./assets/img/it/comedy/c-1.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/comedy/C-2.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/comedy/c-3.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/comedy/c-4.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/comedy/c-5.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/comedy/c-6.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/comedy/c-7.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/imG/it/my list/ml-8.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/comedy/c-9.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/comedy/c-10.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+ 
+                <!-- arrow right -->
+                <div class="absolute right-0 cursor-pointer rightArrow7" onClick="rightScroll('.carousel7', '.rightArrow7')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+        </section> 
+
+        <!-----------------------------------------------Drama---------------------------------------------------------->
+        
+        <p class="py-2 font-semibold text-white text-xl ml-16">Drama</p>
+
+        <!-- 1st step : overflow hidden -->
+        <!-- 2nd step : overflow scroll -->
+        <section class="carousel8 overflow-x-hidden scroll-smooth mb-12">
+ 
+            <!-- carousel -->
+            <div class="flex space-x-2">
+ 
+                <!-- arrow left-->
+                <div class="absolute left-0 z-30 cursor-pointer leftArrow8" onClick="leftScroll('.carousel8', '.leftArrow8')">
+                    <button class="relative p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-left"></i></font></button>
+                </div>
+ 
+                <div class="relative">
+                    <div class="w-64 h-36 ml-16 ">
+                        <a href="#"><img src="./assets/img/it/drama/dr-1.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/drama/dr-2.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/drama/dr-3.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/drama/dr-4.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/drama/dr-5.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36 ">
+                        <a href="#"><img src="./assets/img/it/drama/dr-6.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/drama/dr-7.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/imG/it/drama/dr-8.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/drama/dr-9.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-64 h-36">
+                        <a href="#"><img src="./assets/img/it/drama/dr-10.JPG" class="rounded w-64 h-36 opacity-100 mb-3 transform hover:scale-125 transition duration-500 ease-in-out overflow-hidden"/></a>
+                    </div>
+                </div>
+ 
+                <!-- arrow right -->
+                <div class="absolute right-0 cursor-pointer rightArrow8" onClick="rightScroll('.carousel8', '.rightArrow8')">
+                    <button class="p-4 h-40 mr-2 focus:outline-none"><font size="6"><i class="fas fa-angle-right"></i></font></button>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+    <!------------------------------------------------------footer--------------------------------------------->
+    
+    <footer class="text-neutral-400 text-xs py-8 w-4/6 mx-auto">
+        
+      <!----------------------------------------------- font-awesome ------------------------------------------->
+
+        <div class="flex text-3xl space-x-5 py-4">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+
+        <!------------------------------------------ grid --------------------------------------------->
+
+        <div class="grid gap-y-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+            <div class="">
+                <a href="#">Audio and Subtitles</a>
+            </div>
+            <div class="">
+                <a href="#">Audio Description</a>
+            </div>
+            <div class="">
+                <a href="#">Help Center</a>
+            </div>
+            <div class="">
+                <a href="#">Gift Cards</a>
+            </div>
+            <div class="">
+                <a href="#">Media Center</a>
+            </div>
+            <div class="">
+                <a href="#">Investor Relations</a>
+            </div>
+            <div class="">
+                <a href="#">Jobs</a>
+            </div>
+            <div class="">
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="">
+                <a href="#">Privacy</a>
+            </div>
+            <div class="">
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="">
+                <a href="#">Cookie Preferences</a>
+            </div>
+            <div class="">
+                <a href="#">Corporate Information</a>
+            </div>
+            <div class="">
+                <a href="#">Contact Us</a>
+            </div>
+            
+
+        </div>
+
+        <!--------------------------------------- service code & copyright---------------------------------------- -->
+
+        <div class="py-6">
+            <button class="p-2 border border-neutral-500 cursor-pointer hover:text-white">Service Code</button>
+        </div>
+
+        <p>&copy;1997-2022 Netflix, Inc. {i-00000000000000000000}</p>
+
+
+
     </footer>
 
 
