@@ -12,7 +12,7 @@
         <title>Home - Netflix</title>
         <link rel="icon" type="image/png" href="./favicon.png" />
         <link rel="stylesheet" href="./styles.css">
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com"></script> 
         <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Font Awesome icons (free version) -->
@@ -27,13 +27,13 @@
 
             <!-- header, navigation -->
 
-            <section class="header-navbar fixed top-0 w-full bg-gradient-to-b from-black text-white z-50">
+            <section class="header-navbar fixed top-0 w-full h-42 bg-gradient-to-b from-black text-white z-50">
 
                 <div class="flex xl:flex-row flex-col items-center py-5 px-12 ml-2">
 
                     <!-- netflix logo -->
                     <a href="#">
-                        <img src="./Assets/img/logo/NETFLIX.png" alt="Netflix" class="w-36 cursor-pointer bg-black"/>
+                        <label for="netflix" class="block text-4xl font-bold text-red-600">NETFLIX</label>
                     </a>
 
                     <!-- navigation, main links -->
@@ -66,17 +66,17 @@
             </section>
 
             <!-- header, wallpaper and biography -->
-            <section class="h-screen">
+            <section class="h-screen" id="video-test" onmouseover="play('#vid')" onmouseout="pause('#vid')"></section>
 
                 <div class="movie-container-main">
 
-                    <img src="./Assets/img/logo/poster.jpg" alt="John wick" class="absolute w-full h-screen object-cover cursor-pointer "/>
-               
-                <video src="./Assets/img/video/John Wick_ Chapter 3.mp4" 
-                class="absolute w-full h-screen object-cover autoplay" data-play="play"  loop="infinite" onmouseover="this.play()" onmouseout="this.pause()"></video>
+                   
                     
+                    <video src="./Assets/img/video/John Wick_ Chapter 3.mp4" autoplay loop class="video absolute top-0 h-screen w-full object-cover z-10"
+                     id="vid" onclick="toggleMuted('#video-test')"></video>
+                  
                     <!-- logo + storyline -->
-                    <div class="absolute top-40 px-16">
+                    <div class="absolute top-40 px-16 z-30">
 
                         <!-------------------------------------------- md: w-8/12 ----------------------------------->
                         <div class="flex flex-col xl:w-10/12 lg:w-6/12 md:w-8/12 sm:w-8/12 space-y-2 py-12">  
@@ -84,22 +84,22 @@
                                 <img src="./Assets/img/logo/main.png" class="w-10 h-5" alt="logo netflix">
                                 <p class=" text-sm font-bold text-white ">FILM</p>
                             </div>
-                            <p class=" text-sm font-bold text-white text-6xl my-6">JOHN WICK 3</p>
-                            <p class="text-white text-lg">
+                            <p class=" text-sm font-bold text-white font-serif text-6xl my-6">JOHN WICK 3</p>
+                            <p class="text-white font-bold text-lg ">
                                 John Wick is declared excommunicado and a hefty bounty <br> is
                                 set on him after he murders an international crime lord.
                                 <br> He sets out to seek help to save himself from ruthless hitmen  and bounty hunters.</p>
 
                             <div class="flex flex-row w-full space-x-4">
                                 <!-- play -->
-                                <button class="flex justify-center items-center bg-transparent border hover:bg-opacity-60 hover:bg-gray-800 rounded-lg shadow-md space-x-2 px-8 py-2 mt-5 cursor-pointer">
+                                <button class="flex justify-center items-center bg-transparent border  hover:bg-gray-800 rounded-lg shadow-lg w-40 space-x-2 px-8 py-2 mt-5 cursor-pointer">
                                     <i class="fas fa-play text-white"></i>
                                     <span class="text-white font-semibold">Play</span>
 
                                 </button>
 
                                 <!-- more info -->
-                                <button class="flex justify-center items-center bg-gray-800 bg-opacity-80 hover:bg-opacity-60 rounded-lg shadow-md space-x-2 px-8 py-2 mt-5">
+                                <button class="flex justify-center items-center bg-transparent border  hover:bg-gray-800 rounded-lg shadow-lg space-x-2 px-8 py-2 mt-5">
                                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path> 
                                     </svg>
@@ -112,16 +112,10 @@
 
                     </div>
 
-                    <video class="rounded w-full h-screen object-cover cursor-pointer" src="./assets/vid/peakyblinders.mp4" muted onmouseover="this.play();" onmouseout="this.pause();"></video>
-
                 </div>
-
-
-                <!-- wallpaper, bg gradient to top -->
-                <div class="absolute bottom-0 bg-gradient-to-t from-black w-full h-40"></div>
-
-
             </section>
+            <!-- wallpaper, bg gradient to top -->
+            <div class="absolute bottom-0 bg-gradient-to-t from-black w-full h-40"></div>
 
         </header>
 
@@ -512,49 +506,49 @@
                     <p class="absolute font-semibold mx-2 my-5 z-30">Action</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-orange-600 hover:opacity-50 rounded"></div>
-                        <img src="C" alt="Action" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-1.JPG" alt="Action" class="rounded w-48 h-14 "/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Anime</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-pink-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-2.JPG" alt="Anime" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-2.JPG" alt="Anime" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Children</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-indigo-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-3.JPG" alt="Children" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-3.JPG" alt="Children" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Comedy</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-yellow-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-4.JPG" alt="Comedy" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-4.JPG" alt="Comedy" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Docuseries</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-green-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-5.JPG" alt="Docuseries" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-5.JPG" alt="Docuseries" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Drama</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-pink-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-6.JPG" alt="Drama" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-6.JPG" alt="Drama" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Fantasy</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-red-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-7.JPG" alt="Fantasy" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-7.JPG" alt="Fantasy" class="rounded w-48 h-14"/>
                     </div>
                 </a>
 
@@ -562,49 +556,49 @@
                     <p class="absolute font-semibold mx-2 my-5 z-30">French</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-blue-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-8.JPG" alt="French" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-8.JPG" alt="French" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Horror</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-violet-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-9.JPG" alt="Horror" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-9.JPG" alt="Horror" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">International</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-lime-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-10.JPG" alt="International" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-10.JPG" alt="International" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Reality</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-pink-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-11.JPG" alt="Reality" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-11.JPG" alt="Reality" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Romance</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-amber-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-12.JPG" alt="Romance" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-12.JPG" alt="Romance" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Sci-Fi</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-cyan-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-13.JPG" alt="Sci-Fi" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-13.JPG" alt="Sci-Fi" class="rounded w-48 h-14"/>
                     </div>
                 </a>
                 <a href="#">
                     <p class="absolute font-semibold mx-2 my-5 z-30">Thriller</p>
                     <div class="relative">
                         <div class="absolute w-48 h-full bg-gradient-to-r from-purple-600 hover:opacity-50 rounded"></div>
-                        <img src="./Assets/img/it/tv show/tv-14.JPG" alt="Thriller" class="rounded"/>
+                        <img src="./Assets/img/it/tv show/tv-14.JPG" alt="Thriller" class="rounded w-48 h-14"/>
                     </div>
                 </a>
  
